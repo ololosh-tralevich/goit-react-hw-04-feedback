@@ -1,0 +1,15 @@
+.statBlock {
+  width: 100%;
+}
+
+.ratingBlock {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7px 0;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+.feedbackBlock {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 0 0 15px 0;
+}
+
+.feedbackBlock:last-child {
+  margin-bottom: 0;
+}
