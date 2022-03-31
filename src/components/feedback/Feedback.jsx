@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 import Section from 'components/section/Section';
 import FeedbackOptions from 'components/feedbackOptions/FeedbackOptions';
@@ -16,14 +16,14 @@ const initialState = {
 function Feedback() {
   const [counter, setCounter] = useState(initialState);
 
-  const handleIncrement = prop => {
+  const handleIncrement = useCallback(prop => {
     setCounter(prevState => {
       return {
         ...counter,
         [prop]: prevState[prop] + 1,
       };
     });
-  };
+  }, []);
 
   const countTotalFeedback = () => {
     const total = counter.good + counter.neutral + counter.bad;
