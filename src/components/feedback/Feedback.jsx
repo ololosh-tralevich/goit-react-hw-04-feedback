@@ -19,7 +19,7 @@ function Feedback() {
   const handleIncrement = useCallback(prop => {
     setCounter(prevState => {
       return {
-        ...counter,
+        ...prevState,
         [prop]: prevState[prop] + 1,
       };
     });
